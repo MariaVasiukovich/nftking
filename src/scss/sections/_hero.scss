@@ -1,0 +1,208 @@
+.hero{
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    @media screen and (min-width:1500px) {
+        padding-top: 182px;
+    }
+    .container{
+        /* display: flex;
+        justify-content: space-between; */
+        .row{
+           
+            margin: auto;
+
+            @media screen and (min-width:1500px) {
+                width: 90%;
+            }
+
+            .hero-content{
+                /* max-width: 620px; */
+                color: #fff;
+                font-family: 'Inter', sans-serif; 
+                padding: 0;
+                h1{
+                    font-size: clamp(40px, 67/1440*100vw, 67px);
+                    font-weight: 700;
+                    line-height: 1.21em;
+                    letter-spacing: 0.015em;
+                    padding-bottom: 20px;
+                    @media screen and (max-width:767px) {
+                      
+                        text-align: center;
+                    }
+                }
+                p{
+                    max-width: 520px;
+                    font-weight: 400;
+                    font-size: 16.4895px;
+                    line-height: 25px;
+                    letter-spacing: 0.02em;
+
+                    @media screen and (max-width:767px) {
+                        margin: auto;
+                        text-align: center;
+                        padding-bottom: 30px;
+                    }
+                }
+
+                .hero-mobile-cards{
+                    @media screen and (min-width:768px) {
+                        display: none;
+                    }
+
+                    display: flex;
+                    justify-content: center;
+    
+                    img{
+                        max-width: 100%;
+                    }
+                }
+                
+                .hero-buttons{
+                    display: flex;
+                    padding-top: 21px;
+
+                    @media screen and (max-width:767px) {
+                        justify-content: center;
+                    }
+                    .button{
+                        padding: 15px 33px;
+
+                        @media screen and (max-width:800px) {
+                            padding: 10px;
+                        }
+
+                        span{
+                            font-size: clamp(14px, 19/450*100vw, 19px);
+
+                            @media screen and (max-width:400px) {
+                                padding: 5px 9px;
+                                display: flex;
+                                align-items: center;
+                            }
+                        }
+
+                        &.with-bg{
+                            margin-right: 15px;
+
+                            @media screen and (min-width:767px) {
+                                margin-right: 26px;
+                            }
+
+
+                            &:hover{
+                                color: #000;
+
+                            }
+                        }
+
+                        &.no-bg{
+                            &:hover{
+                                background: linear-gradient(97.86deg, #FF8D8D -38.38%, #F7FC0E 71.88%);
+                            }
+                            span{
+                                transition: all 0.3s ease;
+
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+            .hero-tablet-cards{
+                @media screen and (max-width:767px), (min-width:1500px) {
+                    display: none;
+                }
+                margin: auto;
+                img{
+                    max-width: 100%;
+                }
+            }
+
+            
+    
+            .hero-graphic{
+                @media screen and (max-width:1499px) {
+                    display: none !important;
+                }
+                width: 500px;
+                padding: 0;
+                .hero-images{
+                    position: relative;
+                    /* display: flex;
+                    justify-content: center; */
+                    left: 7%;
+                    top: 7.3%;
+                    transition: all 0.5s;
+
+                    img{
+                        transition: all 0.5s;
+                    }
+
+                    &:hover{
+                        /* top: 5%; */
+
+                        .img{
+                            &.hero-img-item2{transform-origin: center 600px;}
+                            &.hero-img-item3{transform-origin: center 600px;}
+                        }
+                    }  
+    
+                    .img{
+                        position: absolute;
+    
+                        &.hero-img-item1{
+                            z-index: 3;
+                            transform: translateY(10px);
+                           
+                        }
+                        &.hero-img-item2{
+                            z-index: 2;
+                            transform: rotate(10deg);
+                            padding-left: 30px;
+                            top: 2px;
+                        }
+                        &.hero-img-item3{
+                            z-index: 1;
+                            transform: rotate(20deg);
+                            padding-left: 60px;
+                            top: -5px;
+
+                            
+
+                        }
+                    }
+                }
+                .hero-logos{
+                    position: absolute;
+                    top: 358px;
+                    left: -60px;
+                    width: 100%;
+                    max-width: 662px;
+                    height: 128px;
+                    display: flex;
+                    justify-content: space-around;
+                    z-index: 4;
+                    background: rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(14.8462px);
+                    border: 2px solid #9c9c9c;
+                    border-radius: 7.42px;
+                    padding: 0 20px;
+        
+                    .hero-logo-item{
+                        margin: auto;
+    
+                        &.coinbase{
+                            /* top: -4px !important; */
+                            padding-bottom: 8px;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+    }
+}

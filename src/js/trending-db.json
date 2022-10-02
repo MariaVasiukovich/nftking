@@ -1,0 +1,26 @@
+[
+    {
+        "image":"img/trending/miles-grogosters.png",
+        "name": "Miles Grogosters",
+        "author": "rominolegs",
+        "price": "4.99"
+    },
+    {
+        "image":"img/trending/reox-fancxy.png",
+        "name": "Reox Fancxy",
+        "author": "hibnastiar",
+        "price": "3.27"
+    },
+    {
+        "image":"img/trending/milesgrogosters.png",
+        "name": "Miles Grogosters",
+        "author": "senjadisini",
+        "price": "4.20"
+    },
+    {
+        "image":"img/trending/tuinz-rey.png",
+        "name": "Tuinz Rey",
+        "author": "albertov",
+        "price": "2.99"
+    }
+]

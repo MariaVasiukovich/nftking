@@ -1,0 +1,36 @@
+.background-elements{
+   /*  .top-right{
+        left: 46.91%;
+        right: 18.55%;
+        top: 0%;
+        bottom: 78.08%;
+    } */
+    .circle{
+        position: absolute;
+        background: radial-gradient(34.98% 34.98% at 50% 50%, #725BDA 0%, rgba(6, 19, 45, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+        //background-color: radial-gradient(circle at top left, #725BDA, #fff);
+        opacity: 0.5;
+     /*    width: 100vw;
+        height: 100vh; */
+        
+
+        &.top-right{
+            width: 1468px;
+            height: 1468px;
+            left: 46.91%;
+            right: 18.55%;
+            top: -50%;
+            bottom: 88.08%;
+        }
+
+        &.middle-left{
+            height: 2370px;
+            width: 2370px;
+           /*  left: -50%; */
+            right: 38.34%;
+            top: 4.69%;
+            bottom: 59.93%;
+
+        }
+    }
+}

@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    }
+
+body{
+    background-color: #000;
+    overflow-x: hidden;
+    .container{
+        max-width: 1540px;
+        width: 90%;
+        margin: 0 auto;
+        
+        .row{
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    .text-gradient{
+        background: linear-gradient(97.86deg, #FF8D8D -38.38%, #F7FC0E 71.88%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    h2{
+        font-family: Poppins;
+        font-weight: 600;
+        letter-spacing: 0.005em;
+        color: #fff;
+    }
+
+    a{
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+

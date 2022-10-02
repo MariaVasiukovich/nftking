@@ -1,0 +1,189 @@
+.header{
+    
+    margin: 0 auto;
+    color: #fff;
+    height: 87px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(141, 141, 141);
+    position: fixed;
+    width: 100%;
+    background: black;
+    z-index: 10;
+
+    .container{
+        .row{
+            padding-top: 26px;
+            .col-md-4{
+                display: flex;
+                justify-content: center;
+                margin: auto;
+
+                &.logo-wrapper{
+                    padding-top: 5px;
+                    margin-left: -10px;
+
+                    @media screen and (max-width:1024px) {
+                        max-width: 100%;
+                        flex: 100;
+                        justify-content: space-between;
+                    }
+
+                    .mobile-burger-wrapper{
+                        @media screen and (min-width:1025px) {
+                            display: none !important;
+                        }
+
+                        display: flex;
+                        justify-content: center;
+
+                        .burger-btn{
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            max-width: 35px;
+            
+                            span{
+                                transition: all 0.25s ease;
+                
+                                &.burger-line{
+                                    display: block;
+                                    margin-bottom: 3px;
+                                    background-image: linear-gradient(97.86deg,#ff8d8d -38.38%,#f7fc0e 71.88%);
+                                    height: 3px;
+                                    width: 100%;
+                
+                                }
+                                &.burger-text{
+                                    color: #fff;
+                                }
+                            }
+                            &.opened{
+                                .burger-line{
+                          
+                                    &.top {
+                                      margin: 0;
+                                      transform: rotate(45deg) translate(7px, 8px);
+                                    }
+                                    &.middle {
+                                      width: 0;
+                                    }
+                                    &.bottom {
+                                      margin: 0;
+                                      transform: rotate(135deg) translate(2px, 0px);
+                                    }
+                                  }
+                                  
+                                  .burger-text {
+                                    transform: translateY(100%);
+                                    opacity: 0;
+                                  }
+                            }
+                          }
+
+                    }
+                }
+
+                &.header-btn{
+
+                    @media screen and (max-width:1024px) {
+                        display: none !important;
+                    }
+                    padding-left: 49px;
+
+                    a.button_connect{
+                        transition: all 0.3s ease;
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .menu{
+                    @media screen and (max-width:1024px) {
+                        display: none !important;
+                    }
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        padding-left: 0;
+                        margin-bottom: 0;
+                        li{
+                            padding-right: 30px;
+                            font-family: 'GT Walsheim Pro Regular';
+                            font-size: 18px;
+
+                            @media screen and (min-width:1024px) and (max-width:1200px) {
+                                padding-right: 20px;
+                            }
+
+                            a{
+                                color: #fff;
+                                text-decoration: none;
+                                transition: all 0.3s ease;
+                        
+                                &:hover{
+                                    /* color: #fff; */
+                                    text-decoration: none;
+                                    background: linear-gradient(97.86deg,#ff8d8d -38.38%,#f7fc0e 71.88%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: rgba(0,0,0,0);
+                                    background-clip: text;
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                .logo{
+                    font-family: 'GT Walsheim Pro Bold';      
+                    font-size: 27px;
+                    font-weight: 700;
+                    line-height: 31px;
+                    letter-spacing: -0.025em;
+                }
+            }
+
+            .col-md-4:first-child{
+                @media screen and (max-width:1024px) {
+                    display: none;
+                }
+               /*  padding-left: 0; */
+            }
+
+            .mobile-menu-wrapper{
+                @media screen and (min-width:1025px) {
+                    display: none !important;
+                }
+                display: none;
+                background-color: #000;
+                margin-top: 20px;
+
+                .mobile-menu{
+                    padding: 30px 0;
+                    ul{
+                        list-style: none;
+                        text-align: center; 
+                        padding: 0;
+
+                        li{
+                            padding: 10px;
+
+                            a{
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .button_connect{
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+                &.active{
+                    display: block;
+                }
+            }
+        }
+    }  
+}

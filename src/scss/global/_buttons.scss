@@ -1,0 +1,46 @@
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; 
+    gap: 10px;
+    border-radius: 30px;
+    color: #fff;
+    background: linear-gradient(97.86deg, #89C6FF -38.38%, #3633D0 71.88%);
+    border: none;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23px;
+
+    &.with-bg{       
+        line-height: 19px;
+        padding: 16px 32px;
+        transition: all 0.3s ease;
+
+        &:hover{
+            color: #000;
+            background: linear-gradient(97.86deg, #FF8D8D -38.38%, #F7FC0E 71.88%);
+        }
+    } 
+    &.no-bg{
+        display: block;
+        padding: 3px !important;
+        text-decoration: none;
+        line-height: 19px;
+        transition: all 0.3s ease;
+
+        span{
+            height: 100%;
+            display: block;
+            border-radius: 30px;
+            background: rgba(0, 0, 0, 1);
+            text-align: center;
+            padding: 16px 32px;
+        }
+    }
+
+    &.button_connect{
+        padding: 8px 24px;
+    }
+}

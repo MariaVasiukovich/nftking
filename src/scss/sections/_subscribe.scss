@@ -1,0 +1,93 @@
+footer{
+    margin-top: 4px;
+    .subscribe{
+        display: block;
+        padding: clamp(40px,96/1440*100vw,96px) clamp(10px,150/1440*100vw,297px);
+        max-width: 1281px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(14.8462px);
+        border-radius: 20px;
+        border: 1px solid #fff;
+        margin-bottom: 50px;
+        @media screen and (width:1920px) {
+            margin-left: 271px;    
+        }
+        
+        .subscribe_wrapper.row{
+            display: block;
+          
+            
+            .subscribe_heading{
+                h2{
+                    font-size: clamp(30px,40/1440*100vw,40px);
+                    line-height: 1.3em;
+                }
+            }
+            .subscribe_description{
+                font-family: Poppins;
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 18px;
+                color: #fff;
+                padding-top: 7px;
+            }
+            .subscribe_form{
+                
+                padding: 0 10px;
+                @media screen and (min-width:1920px) {
+                    padding: 0;
+                    padding-top: 42px;
+                    padding-left: 5px;
+                }
+                @media screen and (min-width:768px) {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                @media screen and (max-width:767px) {
+                    padding: 0;
+                }
+                input{
+                    &#email{
+                        @media screen and (min-width:768px) {
+                            width: 528px;
+                            margin-right: 19px;
+                        }
+                        height: 55px;
+                        background: rgba(255, 255, 255, 0.1);
+                        border-radius: 50px;
+                        border: none;
+                        font-family: Roboto;
+                        font-size: clamp(16px, 20/768*100vw, 20px);
+                        font-weight: 400;
+                        line-height: 23px;
+                        color: white;
+                        padding-left: 24px;
+                    }
+                    &.button{
+                        padding: 16px 27px;
+                        @media screen and (max-width:767px) {
+                            margin: 10px auto;
+                        }
+                        
+                    }
+                    
+                }
+            }
+        }
+    }
+    .copywrite{
+        color: #fff;
+        font-family: 'GT Walsheim Pro Thin', sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+        padding-top: 31px;
+        @media screen and (min-width:1920px){
+            margin-left: -80px;
+        }
+        
+    }
+}
